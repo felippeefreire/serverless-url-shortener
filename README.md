@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This project is used to provide a base of functions in [Lambda AWS](https://aws.amazon.com/pt/lambda/) which it's possible to short urls with form scalable **(Node.js 14.x)**.
+This project provides some functions to create a URL Shortener service. It's created serverless in [Lambda AWS](https://aws.amazon.com/pt/lambda/), that is, it does'n need any server running 24/7 and all data is saved in Redis.
 
 ## Setup  
 Copy and rename the `.env.example` file to `.env`, filling your data.  
@@ -23,10 +23,9 @@ It's necessary to have configured the following environment variables:
 npm run deploy
 ```  
 
-After deploying, you will have the following functions:
+After deploying, you will have the following function:
 
 - url-shortener-app
-
 
 
 ## API
@@ -52,7 +51,10 @@ Response:
 }
 ````
 
+---
+
 GET - /xEgzh
+> "xEgzh" is a hash of existent shortened url (simulating redirect of request above) 
 
 Response:
 
@@ -71,4 +73,4 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 ## Inspiration
-This project is inspired by: https://github.com/dotzero/node-url-shortener
+This project is inspired by https://github.com/dotzero/node-url-shortener
