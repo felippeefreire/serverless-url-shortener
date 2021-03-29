@@ -46,16 +46,29 @@ Response:
 ````json
 {
     "long_url": "https://felippe.dev",
-    "short_url": "http://ak.gd/xEgzh",
+    "short_url": "https://short.io/xEgzh",
     "hash": "xEgzh",
     "createdAt": 1616983901386
 }
 ````
 
 GET - /xEgzh
-Response: 
+
+Response:
+
 REDIRECT - 301
+
 Location: https://felippe.dev
 
+## Contributors
 
-Inspirado em: https://github.com/dotzero/node-url-shortener
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+## Inspiration
+This project is inspired by: https://github.com/dotzero/node-url-shortener

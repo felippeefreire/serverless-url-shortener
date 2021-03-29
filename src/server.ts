@@ -13,6 +13,7 @@ app.use(cors());
 app.use(
   bodyParser.json({ limit: process.env.EXPRESS_PAYLOAD_LIMIT || '10mb' }),
 );
+app.use(bodyParser.urlencoded({extended: true}));
 
 addRoutes(router);
 
