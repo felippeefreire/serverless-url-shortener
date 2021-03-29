@@ -1,0 +1,25 @@
+service: url-shortener
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: prod
+  region: us-east-1
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-plugin-typescript
+  - serverless-offline
+
+functions:
+  app:
+    handler: index.handler
+    timeout: 30
+    memorySize: 128
+    events:
+      - http: ANY /
+      - http: "ANY {proxy+}"
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
