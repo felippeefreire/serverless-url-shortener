@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This project provides some functions to create a URL Shortener service. It's created serverless in [Lambda AWS](https://aws.amazon.com/pt/lambda/), that is, it does'n need any server running 24/7 and all data is saved in Redis.
+This project provides some functions to create a URL Shortener service. It's created serverless in [Lambda AWS](https://aws.amazon.com/pt/lambda/), that is, it doesn't need any server running 24/7 and all data is saved in Redis.
 
 ## Setup  
 Copy and rename the `.env.example` file to `.env`, filling your data.  
